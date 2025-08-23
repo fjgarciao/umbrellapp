@@ -32,6 +32,9 @@ migrate_working_dir/
 .pub/
 /build/
 /coverage/
+.packages
+**/DerivedData/
+**/.DS_Store
 
 # Symbolication related
 app.*.symbols
@@ -43,3 +46,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Android signing & keystore
+android/key.properties
+*.jks
+*.keystore
+
+# Firebase
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
